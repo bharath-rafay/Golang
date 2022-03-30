@@ -17,7 +17,11 @@ func main() {
 
 	StructSlice := make([]sport.Details, 0, 3)
 
-	Info, _ := sport.Getinfo(&StructSlice, file)
+	Info, err := sport.Getinfo(&StructSlice, file)
+
+	if err != nil {
+		logger.Error("Error in returning Slice of struct", zap.Error(err))
+	}
 
 	//fmt.Println(Info)
 

@@ -1,0 +1,44 @@
+- name: Rohit
+  age: 11
+  gender: M
+  sport:
+    - football
+  height: 5.800000190734863
+  weight: 51
+- name: Keerthi
+  age: 13
+  gender: F
+  sport:
+    - badminton
+    - table tennis
+  height: 5.5
+  weight: 45
+- name: Rohini
+  age: 12
+  gender: M
+  sport:
+    - tennis
+  height: 5.400000095367432
+  weight: 44
+- name: Rakesh
+  age: 12
+  gender: M
+  sport:
+    - cricket
+  height: 5.900000095367432
+  weight: 55
+- name: Vinay
+  age: 12
+  gender: M
+  sport:
+    - chess
+    - carrom
+  height: 5.699999809265137
+  weight: 52
+- name: Neha
+  age: 12
+  gender: F
+  sport:
+    - volleyball
+  height: 5.699999809265137
+  weight: 40
