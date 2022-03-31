@@ -3,17 +3,25 @@ package main
 import (
 	"Project/logger"
 	"Project/sport"
+	"fmt"
+	"os"
 
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 )
 
 func main() {
+	if len(os.Args) < 2 {
 
-	file := "/home/bharat/Downloads/in.txt"
+		logger.Error("Enter the text file as an argument")
+		os.Exit(1)
 
-	yamlfile := "test.yaml"
-	jsonfile := "test.json"
+	}
+
+	file := os.Args[1]
+
+	var yamlfile string
+	var jsonfile string
 
 	StructSlice := make([]sport.Details, 0, 3)
 
@@ -32,6 +40,8 @@ func main() {
 	logger.Info("Environment Variable", zap.String("FORMAT", env))
 
 	if env == "yaml" {
+		fmt.Println("Enter the name of yaml to be created")
+		fmt.Scanln(&yamlfile)
 		var YamlCreate sport.MetaYaml
 
 		YamlCreate.Yaml = Info
@@ -40,6 +50,9 @@ func main() {
 
 	}
 	if env == "json" {
+		fmt.Println("Enter the name of json to be created")
+		fmt.Scanln(&jsonfile)
+
 		var JsonCreate sport.MetaJson
 
 		JsonCreate.Json = Info
