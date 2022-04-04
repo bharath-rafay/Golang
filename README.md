@@ -12,13 +12,13 @@ Rakesh,12,M,[cricket],5.9,55
 Vinay,12,M,[chess,carrom],5.7,52
 Neha,12,F,[volleyball],5.7,40
 
-**Key Components of the Code **
+>**Key Components of the Code **
 
-*) **Getinfo(slice,file)** - sport.go 
+**Getinfo(slice,file)** - sport.go 
       reads the text from file and returns a slice of struct with all the details
-*) **DetailWriter interface** -sport.go 
+**DetailWriter interface** -sport.go 
       Its an interface used to create either yaml or json file of the input file
-*) **CreateFile** -sport.go 
+**CreateFile** -sport.go 
       this function is used to create the yaml or json file by passing the interface structs
       
 
