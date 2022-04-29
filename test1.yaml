@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: static-web-test-local-1
+  name: static-web-test-local-1-11
   labels:
     role: myrole
 spec:
